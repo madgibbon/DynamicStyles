@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="DynamicStyles.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <x:String x:Key="now">Current time</x:String>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+        <StackLayout Padding="20">
+           <Label Text="Hey, whats the time?"></Label>
+           <Label Text="{DynamicResource now}"></Label>
+        </StackLayout>
+	<ContentPage.Content>
+	</ContentPage.Content>
+</ContentPage>
